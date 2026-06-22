@@ -21,3 +21,12 @@ Currently deployed through nginx at:
 https://w8df.peschpit.com/
 
 The site is a single static `index.html` file.
+
+## Branching and deployment
+
+- `main` is production and deploys to https://w8df.peschpit.com/
+- `dev` is the development/staging branch and deploys to https://w8df-dev.peschpit.com/
+- Use `./scripts/deploy-static.sh dev` to publish dev changes.
+- Use `./scripts/promote-dev-to-prod.sh` to promote reviewed dev work to production.
+
+See `docs/branching-and-deploy.md` for details.
